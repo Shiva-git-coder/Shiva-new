@@ -1,0 +1,28 @@
+
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E2A47;
+  }
+  
+  .mainHeading {
+    font-size: 90px;
+    font-weight: bold;
+    color: #C4A070;
+    margin-top: 8px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #1E2A47;
+    margin-top: 8px;
+  }
+  

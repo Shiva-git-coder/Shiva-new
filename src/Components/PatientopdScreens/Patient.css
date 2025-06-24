@@ -1,0 +1,454 @@
+.opd-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+.uhid-container {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa, #fcfefe);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgb(200, 234, 245);
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.Label_data{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 10px;
+    gap: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    /* font-size: larger; */
+}
+.input_tags{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+
+}
+.input_tabs{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    box-shadow: 0 1px 6px rgb(179, 234, 245);
+    outline: none;
+}
+.uhid-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.uhid-input {
+
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.uhid-button-container {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.uhid-search-button {
+    width: 80px;
+    height: 30px;
+    background-color: #007963;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.relation-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px
+}
+
+.id-proof-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.dropdown-idProof {
+    width: 130px;
+    border-Radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.idNo-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.idNo-input {
+    width: 130px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.mobile-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.mobile-input {
+    width: 120px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.date-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.date-input {
+    width: 110px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.email-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.email-input {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.name-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.name-input {
+    width: 180px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.gender-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.gender-dropdown {
+    width: 130px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.age-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.age-input {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.dob-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.dob-input {
+    width: 110px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.dept-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.dept-dropdown {
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.doctor-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.doctor-dropdown {
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.slot-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.slot-input {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.status-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px
+}
+
+.status-dropdown {
+    width: 120px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.group-label {
+    font-size: 13px;
+    font-Weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.group-dropdown {
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.source-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.source-input {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.relation-dropdown {
+    width: 130px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.label-swd {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.input-swd {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.select-relation-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.select-relation-dp {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.address-label {
+    font-size: 13px;
+    font-Weight: 600;
+    width: 150px
+}
+
+.address-input {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.state-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.state-input {
+    width: 120px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px,
+}
+
+.city-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.city-input {
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.discount-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px
+}
+
+.discount-input {
+    width: 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.remark-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.remark-input {
+    width: 90px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.referral-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px
+}
+
+.referral-input {
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.ref-mobNo-label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.ref-mob-input {
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.payment-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px
+}
+
+.payment-input {
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.upload-label {
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px
+}

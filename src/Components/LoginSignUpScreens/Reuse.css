@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  --font-color: #d06313;
+  --Navbg-color: #ff7aac;
+  --font-weight-bold: 900;
+  --font-weight-400: 400;
+  --font-normal-size-20: 15px;
+  --font-title-size-35: 28px;
+  --font-subtitle-size-20: 20px;
+  --font-subtitle-size-30: 60px;
+}
+
+.logoFitFinder {
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  background: transparent;
+  border: none;
+  color: white;
+  /* padding: 0px 5px; */
+  border-radius: 0.5rem;
+  margin-right: 5rem;
+  text-shadow: 2px 4px 6px black;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.navfieldWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(0, 110, 220);
+  margin: 0;
+  /* Remove any margin that might shift the header */
+  padding: 8px 0;
+  /* Keep consistent padding */
+  position: fixed;
+  /* Fixes the header at the top of the page */
+  top: 0;
+  /* Position at the very top */
+  z-index: 1000;
+  /* Ensures the header stays above other elements */
+}
+
+
+
+.individualScreenCmn {
+  font-size: large;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: #0b26f3;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+
+.linkNav {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+  /* font-weight: bold; */
+  /* font-family: "Roboto"; */
+}
+
+.main_logo {
+  height: 1.5cm;
+  width: 1.5cm;
+  background-color: #000;
+  padding: 5px;
+}
+
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+  /* Adjust color as needed */
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #333;
+  /* Border to give it a distinct look */
+  border-radius: 8px;
+  /* Rounded corners */
+  text-transform: uppercase;
+  margin: 5px;
+  background-color: white;
+}
+
+/* Styling "Fit" separately for emphasis */
+.logo .fit {
+  color: orangered;
+  /* Primary color for "Fit" */
+  font-weight: bold;
+}
+
+/* Styling for "Finder" */
+.logo .finder {
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.individualScreenCmn:not(:active):hover,
+.active,
+.individualScreenCmn:focus {
+  background-color: #21262cad;
+}
+
+.individualScreenCmn:focus,
+.individualScreenCmn:active {
+  background-color: #1a1f24;
+  outline: none;
+}
+
+.individualScreenCmn::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #0a01303f;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.individualScreenCmn:focus::before,
+.individualScreenCmn:active::before {
+  opacity: 1;
+}
+
+.individualScreenCmn svg {
+  width: 15px;
+  margin-top: 4px;
+}
+
+.individualScreenCmn svg.normal {
+  width: 15px;
+  margin-top: 1px;
+}
+
+/* header content wrap */
+.HeadersContentWrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  margin: auto;
+  width: 99%;
+}
+
+.header12_left_cntntwrap,
+.header15_right_cntntwrap {
+  width: 50%;
+  height: max-content;
+  overflow: hidden;
+}
+
+.header15_right_cntntwrap {
+  padding-left: 4em;
+}
+
+.video-header {
+  /* border: 1px solid red; */
+  transform: translateY(-40px);
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+#description14_header_view {
+  line-height: 1.7em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 20px;
+}
+
+#SmartSkillsHeader {
+  color: var(--font-color);
+  font-size: var(--font-title-size-35);
+  /* font-size: 35px; */
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1em;
+  /* border: 1px solid red; */
+  /* margin-left: 20px; */
+  margin-top: 10px;
+}
+
+#SmartSkillSubHeader {
+  /* border: 1px solid green; */
+  line-height: 2rem;
+  font-weight: 800;
+  font-size: var(--font-subtitle-size-20);
+}
+
+#detailSmartSkill {
+  font-weight: 500;
+  line-height: 1.7em;
+  letter-spacing: -0.01em;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.wrapsearch_table {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 1em;
+  margin: auto;
+  background: #fff;
+}
+
+/* active inaxtive and closed btn */
+.ActiveInprogressbutton {
+  margin: 0.31rem;
+  font-weight: 700;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+#active {
+  border: 2px solid rgba(68, 216, 130, 0.404);
+
+}
+
+#active::after {
+  content: "";
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#InProgress {
+  border: 2px solid rgba(68, 132, 216, 0.404);
+}
+
+#InProgress::after {
+  content: "";
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+#closed {
+  border: 2px solid rgba(211, 68, 216, 0.404);
+}
+
+#closed::after {
+  content: "";
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.type1active {
+  background-color: rgb(11, 8, 65);
+  color: white;
+}
+
+.type1::after {
+  content: "";
+  height: 40px;
+  width: 100px;
+  background-color: rgb(11, 8, 65);
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  /* font-size: 1rem; */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  border: none;
+
+}
+
+.type1::before {
+  content: "";
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+
+/* table data */
+.transactions-table {
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.transactions-table table {
+  width: 100%;
+}
+
+.transactions-table thead tr {
+  background-color: #8fb7d919;
+  color: #3b82ca;
+  /* background-color: #0684efcf;
+  color: black; */
+}
+
+.transactions-table tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.171);
+  cursor: pointer;
+}
+
+.transactions-table th {
+  padding: 8px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.transactions-table td {
+  padding: 1px 5px;
+  color: #000;
+  font-size: 14px;
+  /* border: 1px solid #ddd; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: math-auto;
+}
+
+.transactions-table tbody {
+  text-transform: capitalize;
+  /* font-weight: 500; */
+}
+
+.transactions-table tbody tr {
+  border: 1px solid #ddd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 !important;
+  font-style: normal;
+}
+
+.no-data-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ColorText {
+  color: green !important;
+  font-weight: 700 !important;
+  background: none !important;
+}
+
+#CloseRed {
+  color: red !important;
+  font-weight: 700 !important;
+  background: none !important;
+}
+
+.SpnStsTable {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(255, 166, 0, 0.733);
+  color: rgb(77, 21, 21);
+  border-radius: 0.3em;
+  padding: 0.2em;
+  text-align: center;
+}
+
+/* reusbale btn css */
+.ReusableGetBtn {
+  background-color: #007bffb6;
+  color: white;
+  /* padding: 8px; */
+  height: 0.8cm;
+  width: 2.5cm;
+  font-weight: var(--font-weight-400);
+  /* font-size: 13px; */
+  letter-spacing: -0.05em;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.ReusableGetBtn:hover {
+  /* border: 1px solid #0051ff; */
+  background: rgb(11, 8, 65);
+  color: white;
+  /* border-color: 1px solid rgb(8, 189, 255); */
+}
+
+.txtAreaViewJd {
+  /* width: 100%; */
+  padding: 5px;
+  font-weight: var(--font-weight-400);
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+}
+
+/* login page  */
+
+.Login_container {
+  display: flex;
+  max-width: 900px;
+  background: #f8f9fd;
+  background: linear-gradient(0deg,
+      rgb(255, 255, 255) 0%,
+      rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 20px 25px;
+  box-shadow: 0 0 20px  rgb(132, 236, 247);
+  margin: auto;
+  align-items: center;
+  margin-top: 8%;
+  justify-content: center;
+}
+
+.Login_image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.Login_image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.Login_form_container {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.Login_heading {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(35, 240, 255);
+}
+
+.Login_form {
+  margin-top: 20px;
+}
+
+.Login_form .Login_input {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border: none !important;
+  padding: 15px 20px !important;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #bbf4fb 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.login-button {
+/* max-width: 60%; */
+/* height: 50px; */
+  background: linear-gradient(45deg,
+  rgb(26, 218, 252)0%,
+      rgb(156, 227, 253) 100%) !important;
+  color: rgb(4, 4, 4);
+  font-weight: bold;
+
+}
+/* .login-button:active { */
+  /* padding: 10px 20px;
+  height: 60px;
+  background: linear-gradient(45deg,
+  rgb(252, 26, 146)0%,
+      rgb(245, 88, 203) 100%) !important;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px; */
+  /* cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+  */
+
+/* .login-button {
+  transform: scale(1.0);
+}   */
+/* .Login_form .Login-button:hover {
+  width: 70%;
+  transform: scale(1.03);
+  box-shadow: rgba(249, 159, 186, 0.878) 0px 23px 10px -20px;
+}
+
+.Login_form .Login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(247, 164, 185, 0.878) 0px 15px 10px -10px;
+} */
+
+
+.Login_form .Login_input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.Login_form .Login_input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.Login_form .Login_input:focus {
+  outline: none;
+  border-inline: 2px solid #12b1d1;
+}
+
+.Login_form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.Login_form .forgot-password a {
+  font-size: 11px;
+  color: #0099ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* registeration page css */
+.Signup_container {
+  display: flex;
+  max-width: 900px;
+  background: #f8f9fd;
+  background: linear-gradient(0deg,
+      rgb(255, 255, 255) 0%,
+      rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 20px 25px;
+  box-shadow: 0 0 20px rgba(133, 189, 215, 0.8784313725);
+  margin: auto;
+  align-items: center;
+  margin-top: 8%;
+  justify-content: center;
+}
+
+.Signup_image {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Signup_image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.Signup_form_container {
+  flex: 2;
+}
+
+.Signup_heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(14, 208, 208);
+}
+
+.Signup_form {
+  margin-top: 20px;
+}
+
+.Signup_form .Signup_input {
+  width: 100%;
+  background: white;
+  border: none !important;
+  padding: 15px 15px !important;
+  border-radius: 20px !important;
+  margin-top: 10px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+  gap: 2px;
+}
+
+.suggestions-list {
+  margin-top: 0.2em;
+  border: 1px solid red;
+  display: block;
+  height: 50px;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+.Signup_form .Signup_input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.Signup_form .Signup_input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.Signup_form .Signup_input:focus {
+  outline: none;
+  border-inline: 2px solid #12b1d1;
+}
+
+.Signup_form .signup-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg,
+      rgb(16, 137, 211) 0%,
+      rgb(18, 177, 209) 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.Signup_form .signup-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.Signup_form .signup-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+#success {
+  color: rgb(51, 18, 196);
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.VerifyOtpSpanparent226,
+.SendOtpSpanparent226 {
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 300px;
+}
+
+.wrapSignInBtn {
+  cursor: not-allowed;
+  border: none !important;
+}
+
+.VerifyOtpSpan,
+.sendOtpSpan {
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  font-size: small;
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.QuestionHrsample {
+  max-height: 68vh;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  overflow-y: scroll;
+  margin-top: 1.5em;
+}
+/* Hide the scrollbar in WebKit browsers */
+.QuestionHrsample::-webkit-scrollbar {
+  display: none;
+}

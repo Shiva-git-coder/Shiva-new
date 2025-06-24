@@ -1,0 +1,154 @@
+.remainder-returnfield {
+  margin-bottom: 15px;
+}
+
+.remainder-returnfield-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.remainder-returnfield-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.remainder-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.remainder-tabcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page_title {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #0077b6;
+  padding: 10px;
+}
+
+.dynamic_tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+  margin-bottom: 10px;
+}
+
+
+.remainder-searchinput {
+  max-width: 200px;
+  margin: 10px 5px;
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 14px;
+  color: #333; 
+  background-color: #fff; 
+  box-sizing: border-box; 
+}
+
+.remainder-searchinput::placeholder {
+  color: #aaa; 
+  font-style: italic; 
+}
+
+
+.ERP_table {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  max-height: 60vh;
+  border-radius: 8px;
+  padding: 0px 5px;
+}
+
+.ERP_table::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.ERP_table::-webkit-scrollbar-track {
+  background: #e0f2f1; /* Light teal */
+  border-radius: 12px;
+}
+
+.ERP_table::-webkit-scrollbar-thumb {
+  background: #5a52f1; /* Dark teal */
+  border-radius: 12px;
+  border: 1px solid #b2dfdb;
+}
+
+.ERP_table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+}
+
+
+.ERP_table table thead {
+  /* Main teal color */
+  background-color:#1a73e8;
+  color: #ffffff; /* White for contrast */
+
+}
+
+.ERP_table table th {
+  /* background-color: #00796B; */
+  background-color:#1e2835;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  /* text-align: left; */
+  text-transform: uppercase;
+
+}
+
+
+.ERP_table table tr {
+  /* background-color: #e0f2f1;  */
+  transition: background 0.3s ease;
+}
+
+.ERP_table table tr:hover {
+  background-color: #eeededfd; /* Softer teal on hover */
+  /* color: #004d40; */
+}
+
+.ERP_table table td {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #004d40; /* Dark teal */
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px;
+  border: 1px solid #cfd8dc; /* Light gray for borders */
+}
+
+.ERP_table table select {
+  max-width: 300px;
+  width: 80%;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #00796B;
+  border: 2px solid #00796B;
+}
+
+.ERP_table table td input:focus,
+.ERP_table table td textarea:focus {
+  border-color: #00796B;
+  outline: none;
+}
